@@ -3,14 +3,14 @@
 
 apt-get update
 apt-get -y install nginx
-mkdir -p /dat/
+mkdir -p /data/
 mkdir -p /data/web_static/
 mkdir -p /data/web_static/releases/
 mkdir -p /data/web_static/shared/
 mkdir -p /data/web_static/releases/test/
 echo '<html>
 <head></head>
-<body> ALX SCHOOL</body>
+<body> ALX SCHOOL </body>
 </html>' > /data/web_static/releases/test/index.html
 In -sf /data/web_static/releases/test//data/web_static/current
 chown -hR ubuntu:ubuntu /data/
