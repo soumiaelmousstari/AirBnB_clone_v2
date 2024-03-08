@@ -12,7 +12,7 @@ echo '<html>
 <head></head>
 <body> ALX SCHOOL </body>
 </html>' > /data/web_static/releases/test/index.html
-In -sf /data/web_static/releases/test//data/web_static/current
+ln -sf /data/web_static/releases/test/ /data/web_static/current
 chown -hR ubuntu:ubuntu /data/
 sed -i '51 i \\n\tlocation /hbnb_static {\n\talias /data/web_static/current;\n\t}' /etc/nginx/sites-available/default
 service nginx restart
