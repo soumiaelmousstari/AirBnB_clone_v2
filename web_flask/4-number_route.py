@@ -25,14 +25,13 @@ def C_fun(text):
     return 'C ' + text.replace('_', ' ')
 
 
-@application.route('/python', strict_slashes=False)
 @application.route('/python/<text>', strict_slashes=False)
 def Python_fun(text='is cool'):
     """Her return is 'Python followd by text's value and replace('_', ' ')'"""
     return 'Python ' + text.replace('_', ' ')
 
 
-@application.route('/number/<n>', strict_slashes=False)
+@application.route('/number/<int:n>', strict_slashes=False)
 def isnumber_fun(n):
     """Her return 'n is a number if n is an integer'"""
     return '{:d} is a number'.format(n)
