@@ -25,6 +25,7 @@ def C_fun(text):
     return 'C ' + text.replace('_', ' ')
 
 
+@application.route('/python', strict_slashes=False)
 @application.route('/python/<text>', strict_slashes=False)
 def Python_fun(text='is cool'):
     """Her return is 'Python followd by text's value and replace('_', ' ')'"""
