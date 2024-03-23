@@ -29,7 +29,7 @@ def C_fun(text):
 
 @application.route('/python/', strict_slashes=False)
 @application.route('/python/<text>', strict_slashes=False)
-def python_fun(text='is cool'):
+def python_fun(text="is cool"):
     """
     Her return is 'Python followd by text's value(replace _ with space)'
     """
