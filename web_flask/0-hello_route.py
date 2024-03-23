@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """
 0.Hello Flask!(a script that starts a Flask web application)
 """
