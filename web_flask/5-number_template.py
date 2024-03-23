@@ -3,7 +3,7 @@
 5.Number template(a script that starts a Flask web  application)
 """
 
-from flask import Flask
+from flask import Flask, render_template
 application = Flask(__name__)
 
 
