@@ -36,5 +36,5 @@ def python_fun(text='is cool'):
     return 'Python ' + text.replace('_', ' ')
 
 
-if '__name__' == '__main__':
+if __name__ == '__main__':
     application.run(host='0.0.0.0', port='5000')
