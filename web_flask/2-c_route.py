@@ -18,7 +18,7 @@ def fun_HBNB():
     return 'HBNB'
 
 
-@application.rout('/c/<text>', strict_slashes=False)
+@application.route('/c/<text>', strict_slashes=False)
 def c_fun():
     """
     Her return is 'C followed by the value of the
