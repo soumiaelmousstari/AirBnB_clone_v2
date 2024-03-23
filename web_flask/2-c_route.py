@@ -19,7 +19,7 @@ def fun_HBNB():
 
 
 @application.route('/c/<text>', strict_slashes=False)
-def c_fun():
+def c_fun(text):
     """
     Her return is 'C followed by the value of the
     text variable (replace underscore _ with a space)'
